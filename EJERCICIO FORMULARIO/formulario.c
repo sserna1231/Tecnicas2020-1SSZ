@@ -1,9 +1,47 @@
 #include "formulario.h"
 
+void verificarMesUsuario(user* usuario){
+
+    mes nacimiento;
+    
+    do{
+        printf("Ingrese su mes de nacimiento:\n> ");
+        scanf("%d", &nacimiento);
+
+        switch(nacimiento){
+            case ENERO: usuario->mes = nacimiento;
+                        break;
+            case FEBRERO: usuario->mes = nacimiento;
+                        break;
+            case MARZO: usuario->mes = nacimiento;
+                        break;
+            case ABRIL: usuario->mes = nacimiento;
+                        break;
+            case MAYO: usuario->mes = nacimiento;
+                        break;
+            case JUNIO: usuario->mes = nacimiento;
+                        break;
+            case JULIO: usuario->mes = nacimiento;
+                        break;
+            case AGOSTO: usuario->mes = nacimiento;
+                        break;
+            case SEPTIEMBRE: usuario->mes = nacimiento;
+                        break;
+            case OCTUBRE: usuario->mes = nacimiento;
+                        break;
+            case NOVIEMBRE: usuario->mes = nacimiento;
+                        break;
+            case DICIEMBRE: usuario->mes = nacimiento;
+                        break;
+            default: printf("Valor invalido\n");
+        }
+    } while(nacimiento < 1 || nacimiento > 12);                            
+}
+
+
 void llenarForm(user* usuario_nuevo){
 	
 	int i;
-	mes nacimiento;
 
 	printf("Ingrese su nombre. Asegurese de no ingresar mas" 
     " de 30 caracteres:\n> ");
@@ -43,4 +81,14 @@ void imprimirDatosUsuario(user usuario_nuevo){
 	printf("Dia de nacimiento:%d \n", usuario_nuevo.dia);
 	printf("Mes de nacimiento:%d \n", usuario_nuevo.mes);
     printf("Anio de nacimiento:%d \n", usuario_nuevo.year);
+}
+
+void guardarNuevoUsuario(user Matriz[][5], user* nuevo_registro_usuario){
+
+    int j;
+
+    for(j = 0; j < 5; j++){
+        if(Matriz[nuevo_registro_usuario->mes][j].name[0] == '0')
+            Matriz[nuevo_registro_usuario->mes][j] = *nuevo_registro_usuario;
+    }
 }
