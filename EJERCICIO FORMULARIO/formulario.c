@@ -44,7 +44,7 @@ void llenarForm(user* usuario_nuevo){
 	int i;
 
 	printf("Ingrese su nombre. Asegurese de no ingresar mas" 
-    " de 30 caracteres:\n> ");
+    " de 30 caracteres:\n> "); fflush(stdin);
 	fgets(usuario_nuevo->name, 30, stdin); fflush(stdin);
 	
     //Verificacion de valor de dia
@@ -75,7 +75,7 @@ void llenarForm(user* usuario_nuevo){
 }
 
 void imprimirDatosUsuario(user usuario_nuevo){
-    printf("\nRegistro llevado a cabo correctamente\n");
+    
 	printf("------------------------------\n");
 	printf("Nombre: %s \n", usuario_nuevo.name);
 	printf("Dia de nacimiento:%d \n", usuario_nuevo.dia);
@@ -90,5 +90,58 @@ void guardarNuevoUsuario(user Matriz[][5], user* nuevo_registro_usuario){
     for(j = 0; j < 5; j++){
         if(Matriz[nuevo_registro_usuario->mes][j].name[0] == '0')
             Matriz[nuevo_registro_usuario->mes][j] = *nuevo_registro_usuario;
+    }
+}
+
+int verificarEspacio(user Matriz[][5], short mes){
+
+    int j;
+
+    for(j = 0; j < 5; j++){
+        if(Matriz[mes - 1][j].name[0] == '\0')
+            return 1;
+    }
+    return 0;
+}
+
+void mostrarDatosMes(user Matriz[][5], short mes){
+
+    int j = 0;
+
+    while(Matriz[mes - 1][j].name[0]){
+        imprimirDatosUsuario(Matriz[mes - 1][j]);
+        j++;
+    }
+}
+
+double segundosActualidad(enum time_scala tiempo_buscado, int tiempo_interes){
+
+    struct tm *secs;
+    time_t tiempo;
+    tiempo = time(NULL);
+    secs = localtime(&tiempo);
+    
+    switch(tiempo_buscado){
+        case DAY:
+            if(tiempo_interes == secs->tm_mday){
+                return secs->tm_hour*3600 + secs->tm_min*60 + secs->tm_sec;
+            }else{
+                return DIA_SEC + segundosActualidad(DAY, tiempo_interes + 1);
+            }
+            break;
+        case MONTH:
+            if(tiempo_interes == secs->tm_mon){
+                return segundosActualidad(MONTH + 1, 1);
+            }else{
+                return MONTH_SEC + segundosActualidad(MONTH, tiempo_interes + 1);
+            }
+            break;
+        case YEAR:
+            if(tiempo_interes == secs->tm_year + 1900){
+                return segundosActualidad(YEAR + 1, 0);
+            }else{
+                return YEAR_SEC + segundosActualidad(YEAR, tiempo_interes + 1);
+            }
+            break;
     }
 }

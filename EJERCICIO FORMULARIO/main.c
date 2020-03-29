@@ -3,14 +3,16 @@
 int main(){
 
     enum options opc;
+    enum time_scala horizonte = YEAR;
+    double secs;
     user usuario;
-    user* new_user = &usuario; 
     //Estructura que guarda
     user server[12][5];
 
 //Registro de usuarios (struct) en estructura estática: matriz 12*5
         do{
-        //Despliegue de menu de bienvenida (opciones)
+            //Despliegue de menu de bienvenida (opciones)
+            
             printf("\n\t\tBienvenido querido usuario.\n\n");
             printf("Ingrese el numero respectivo de una de las siguientes"
             " actividades:\n\n");
@@ -23,31 +25,38 @@ int main(){
 
             //Recibimiento de instruccion del usuario:
             printf("Digite su opcion: > ");
-            scanf("%i", &opc);
+            scanf("%d", &opc);
                 
                 switch(opc){
                     case SALIR: 
-                        printf("Hasta luego");
+                        printf("\nHasta luego\n");
                         break;
                     case LOG_IN:
-                        verificarMesUsuario(new_user);
-                        if(/*Funcion de lucas dice que si hay espacio*/){
-                            llenarForm(new_user);
+                        verificarMesUsuario(&usuario);
+                        if(verificarEspacio(server, usuario.mes)){
+                            llenarForm(&usuario);
+                            //Llenarform esta reiniciando el mes en  usuario
+                            guardarNuevoUsuario(server, &usuario);
+                            printf("\nRegistro llevado a cabo correctamente\n");
                             imprimirDatosUsuario(usuario);
-                            guardarNuevoUsuario(server, new_user);
                         } else{
                             printf("Lo sentimos, estimado usuario. No pudo registrarse debido a que"
                             " nuestro servidor esta lleno para su mes\n");
                         }
                         break;
                     case SHOW_INFO:
-                        /*Proceso de muestra de datos de mes*/
+                        verificarMesUsuario(&usuario);
+                        mostrarDatosMes(server, usuario.mes);
                         break;
                     case RECURSION:
-                        
+                            llenarForm(&usuario);
+                            secs = segundosActualidad(horizonte, usuario.year);
+                            printf("Sabias %s que desde el anio en que naciste, han transcurrido"
+                            " alrededor de %.0f segundos en el planeta!\n", usuario.name, secs);
                         break;
                     default: printf("Valor invalido\n");
                         break;
                 }
         } while(opc);
+    return 0;
 }
