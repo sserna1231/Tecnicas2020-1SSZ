@@ -50,7 +50,7 @@ void llenarForm(user* usuario_nuevo){
     //Verificacion de valor de dia
     do{
 	printf("Ingrese su dia de nacimiento:\n> ");
-    scanf("%d", &usuario_nuevo->dia);
+    scanf("%hi", &usuario_nuevo->dia);
         if(usuario_nuevo->dia < 1 || usuario_nuevo->dia > 30)
             printf("Valor invalido\n");
     } while(usuario_nuevo->dia < 1 || usuario_nuevo->dia > 30);
@@ -58,7 +58,7 @@ void llenarForm(user* usuario_nuevo){
     //Verificacion del anio de nacimiento
         do{    
             printf("Ingrese su anio de nacimiento:\n> ");
-            scanf("%d", &usuario_nuevo->year);
+            scanf("%hi", &usuario_nuevo->year);
                 if(usuario_nuevo->year < 1910) printf("Valor invalido."
                 "Es muy poco probable que siga vivo\n");
                 if(usuario_nuevo->year > 2020) printf("Valor invalido."
@@ -88,8 +88,13 @@ void guardarNuevoUsuario(user Matriz[][5], user* nuevo_registro_usuario){
     int j;
 
     for(j = 0; j < 5; j++){
-        if(Matriz[nuevo_registro_usuario->mes][j].name[0] == '0')
+        if(Matriz[nuevo_registro_usuario->mes][j].name[0] == '\0'){
             Matriz[nuevo_registro_usuario->mes][j] = *nuevo_registro_usuario;
+            printf("%s %d %d %d", Matriz[nuevo_registro_usuario->mes][j].name,
+            Matriz[nuevo_registro_usuario->mes][j].dia, Matriz[nuevo_registro_usuario->mes][j].mes
+            , Matriz[nuevo_registro_usuario->mes][j].year);
+            break;
+        }
     }
 }
 

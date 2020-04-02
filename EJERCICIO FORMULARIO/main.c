@@ -9,10 +9,8 @@ int main(){
     //Estructura que guarda
     user server[12][5];
 
-//Registro de usuarios (struct) en estructura estática: matriz 12*5
         do{
             //Despliegue de menu de bienvenida (opciones)
-            
             printf("\n\t\tBienvenido querido usuario.\n\n");
             printf("Ingrese el numero respectivo de una de las siguientes"
             " actividades:\n\n");
