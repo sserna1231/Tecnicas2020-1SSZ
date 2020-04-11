@@ -5,6 +5,7 @@ int main(){
     enum options opc;
     enum time_scala horizonte = YEAR;
     double secs;
+    //Struct de unidad de información
     user usuario;
     //Estructura que guarda
     user server[12][5];
