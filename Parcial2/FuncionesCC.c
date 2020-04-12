@@ -1,13 +1,18 @@
 #include "FuncionesCC.h"
 
 /* Funcion de ejemplo que imprimiria la informacion de un local */
-void mostrarLocal(local_t ** centroComercial, int numPiso,
-        int numLocalxPiso, int numPisos, int numLocalesxPiso) {
+void mostrarLocal(local_t ** centroComercial){
     
-    //Se valida si el numero ingresado esta en el rango
-    if(numPiso <= numLocalxPiso && numLocalxPiso <= numLocalesxPiso){
-        printf("Nombre local : %s", centroComercial[numPiso][numLocalxPiso].nombreLocal);
-    }
+    short direccion_local[2];
+
+    determinarDireccionLocal(direccion_local);
+    
+    printf("\n\n=========================\nNombre: %s\n", 
+        centroComercial[direccion_local[0]][direccion_local[1]].nombreLocal);
+    printf("Piso: %d Espacio en piso: %d\n", 
+        centroComercial[direccion_local[0]][direccion_local[1]].pisoLocal, 
+        centroComercial[direccion_local[0]][direccion_local[1]].numLocalxPiso);
+    printf("ID: %i\n\n", centroComercial[direccion_local[0]][direccion_local[1]].idLocal);
 }
 
 void determinarDimensionesMall(short dimensiones_mall[]){
@@ -38,14 +43,14 @@ void determinarDireccionLocal(short direccion_local[], short dimensiones_mall[])
     short piso, lugar_piso;
 
     do{
-        printf("Digite el piso del nuevlo local:\n> ");
+        printf("Digite el piso del local:\n> ");
         scanf("%hd", &piso);
             if(piso < 1 || piso > dimensiones_mall[0]) 
                 printf("Valor invalido\n\n");
     }while(piso < 1 || piso > dimensiones_mall[0]);
 
     do{
-        printf("Digite el espacio para el nuevo local en el piso establecido:\n> ");
+        printf("Digite el espacio del local en el piso establecido:\n> ");
         scanf("%hd", &lugar_piso);
             if(lugar_piso < 1 || lugar_piso > dimensiones_mall[1]) 
                 printf("Valor invalido\n\n");
@@ -96,7 +101,7 @@ local_t **construirCentroComercial(short dimensiones_mall[]){
 }
 
 //Verificacion de espacio en ubicacion determinada por usuario}
-short verificarUbicacionLocal(dis **Mall_availability, short direccion_local[]){
+short verificarUbicacionLocal(dis **Mall_availability, short piso, short espacio_piso){
 
     short piso, espacio_piso;
     dis disponibilidad_espacio;
@@ -148,12 +153,69 @@ void establecerDisponibilidad(dis **Mall_availability, dis Disponibilidad,
     }
 }
 
-/*void mostrarLocal(es ** pMatriz , int fil, int col){
+//Funcion revursiva que da cuenta del espacio disponible
+/*Recibe como parametro Verdadero o Falso si se desea el espacio para todo el edificio
+ o solo para una fila concreta*/
+short reportarEspacioDisponible(short **disponibilidad,  short dimensiones_mall[], 
+    short piso, opc busqueda_completa){
 
-    int i;
+    short i = dimensiones_mall[0] - 1;
+    short j = dimensiones_mall[1] - 1;
 
-    printf("Estudiante\t\tNota final\n");               
-    for(i = 0; i < fil; i++){
-    printf("%s\t%.2f\n", pMatriz[i][0].name, pMatriz[i][0].final_grade);
+    switch(busqueda_completa){
+        case FALSE:
+            if(j = 0) return verificarUbicacionLocal(disponibilidad, piso, 0);
+            else{
+                return verificarUbicacionLocal(disponibilidad, piso, j) + 
+                    verificarUbicacionLocal(disponibilidad, piso, j - 1);
+            }
+            break;
+        case TRUE:
+            if(j = 0 && i = 0) return verificarUbicacionLocal(disponibilidad, 0, 0);
+            else if(j = 0){
+                j = dimensiones_mall[1] - 1;
+                return verificarUbicacionLocal(disponibilidad, i - 1, j);
+            } 
+            else{
+                return verificarUbicacionLocal(disponibilidad, i, j) + 
+                    verificarUbicacionLocal(disponibilidad, i, j - 1);
+            }
+            break;
+        default: printf("Opcion invalida");
     }
-}*/
+}
+
+void mostrarInformacionLocales(local_t **centroComercial, dis **availability, short piso, short dimensiones_mall[], 
+    opc busqueda_piso_completa){
+
+    int i, j;
+
+    switch(busqueda_piso_completa){
+        case FALSE:
+            for(i = 0; i < dimensiones_mall[1]; i++){
+                if(verificarUbicacionLocal(availability, piso - 1, i)){
+                    printf("\n\n=========================\nNombre: %s\n", 
+                    centroComercial[piso - 1][i].nombreLocal);
+                    printf("Piso: %d Espacio en piso: %d\n", 
+                    centroComercial[piso - 1][i].pisoLocal, 
+                    centroComercial[piso - 1][i].numLocalxPiso);
+                    printf("ID: %i\n\n", centroComercial[piso - 1][i].idLocal);
+                }
+            }
+            break;
+        case TRUE:
+            for(i = 0; i < dimensiones_mall[0]; i++){
+                for(j = 0; j < dimensiones_mall[1]; j++){
+                    if(verificarUbicacionLocal(availability, i, j)){
+                        printf("\n\n=========================\nNombre: %s\n", 
+                        centroComercial[i][j].nombreLocal);
+                        printf("Piso: %d Espacio en piso: %d\n", 
+                        centroComercial[i][j].pisoLocal, 
+                        centroComercial[i][j].numLocalxPiso);
+                        printf("ID: %i\n\n", centroComercial[i][j].idLocal);
+                    }
+                }
+            }
+            break;
+    }
+}

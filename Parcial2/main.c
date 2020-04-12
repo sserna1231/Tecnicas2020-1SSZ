@@ -19,7 +19,7 @@ int main(){
     //Mostrar menu:
             do{
                 determinarDireccionLocal(dir_local, dimensiones);
-                if(!verificarUbicacionLocal(disponibilidad, dir_local)){
+                if(!verificarUbicacionLocal(disponibilidad, dir_local[0], dir_local[1])){
                     establecerNuevoLocal(mall, dir_local);
                     printf("Nombre: %s\nPiso: %d\nEspacio: %d\nID: %p\n",
                         mall[dir_local[0] - 1][dir_local[1] - 1].nombreLocal,mall[dir_local[0] -1][dir_local[1] - 1].pisoLocal,
@@ -32,7 +32,7 @@ int main(){
                 }
             }while(1); 
         /*-Operacion 1: Mostrar el espacio disponible en todo el edificio y por piso
-        -Operacion 2: Mostrar el nombre de los locales por piso o alguno en especifico
+        -Operacion 2: Mostrar la info de los locales por piso o alguno en especifico
         -Editar info local
         -Eliminar local
         -Opcion salida con EOF

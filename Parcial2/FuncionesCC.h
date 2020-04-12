@@ -13,10 +13,17 @@ typedef struct Local{
     // Completelo con lo que quiera
 } local_t;
 
+typedef enum opcion_recursiva{
+    FALSE, TRUE
+} opc;
+
 //Enum de estados de espacio en el mall
 typedef enum Disponibilidad{
     DESOCUPADO, OCUPADO
 } dis;
+
+//Mostrar un local especifico
+void mostrarLocal(local_t ** centroComercial);
 
 //Funcion que devulve las dimensiones especificadas del mall
 void determinarDimensionesMall(short dimensiones_mall[]);
@@ -35,7 +42,7 @@ local_t **construirCentroComercial(short dimensiones_mall[]);
 dis **alocarEspacioMatrizDisponibilidad(short dimensiones_mall[]);
 
 //Verificacion de espacio en ubicacion determinada por usuario}
-short verificarUbicacionLocal(dis **Mall_availability, short direccion_local[]);
+short verificarUbicacionLocal(dis **Mall_availability, short piso, short espacio_piso);
 
 //Se llenan campos importantes de la informacion del mall
 void establecerNuevoLocal(local_t ** pMatriz , short direccion_local[]);
@@ -43,5 +50,17 @@ void establecerNuevoLocal(local_t ** pMatriz , short direccion_local[]);
 //Administrar la disponibilidad en el arreglo del mismo nombre
 void establecerDisponibilidad(dis **Mall_availability, dis Disponibilidad, 
     short direccion_local[]); 
+
+//Funcion revursiva que da cuenta del espacio disponible
+/*Recibe como parametro Verdadero o Falso si se desea el espacio para todo el edificio
+ o solo para una fila concreta*/
+short reportarEspacioDisponible(local_t **centroComercial,  short dimensiones_mall[], 
+    short piso, opc busqueda_completa);
+
+//Muestra la informacion de un conjunto de locales
+/*Si se le da como parametro verdadero, muestra todos los locales 
+del centro comercial. Si se deja como falso, solo muestra los locales del 
+piso especificado*/
+void mostrarInformacionLocales(local_t **centroComercial, short piso, opc busqueda_piso_completa);
 
 #endif /* FUNCIONESCC_H_ */
