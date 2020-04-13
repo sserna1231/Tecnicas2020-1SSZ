@@ -27,17 +27,13 @@ typedef enum edit_field{
 } campo; //El id no es modificable por el usuario
 
 //Mostrar un local especifico
-void mostrarLocal(local_t ** centroComercial);
+void mostrarLocal(local_t ** centroComercial, short piso, short espacio_piso);
 
 //Funcion que devulve las dimensiones especificadas del mall
 void determinarDimensionesMall(short dimensiones_mall[]);
 
 //Guarda la direccion verificada del local dada por el usuario 
 void determinarDireccionLocal(short direccion_local[], short dimensiones_mall[]);
-
-/*Agregar las funciones que necesite para satisfacer los requerimientos */
-void mostrarLocal(local_t ** centroComercial, int numPiso,
-        int numLocalxPiso, int numPisos, int numLocalesxPiso);
 
 //Crea el espacio del nuevo mall
 local_t **construirCentroComercial(short dimensiones_mall[]);

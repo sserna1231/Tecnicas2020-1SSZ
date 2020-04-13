@@ -30,10 +30,12 @@ int main(){
                 } else{
                     printf("Direccion ocupada dentro del mall\n");
                 }
+                reportarEspacioDisponible(disponibilidad, dimensiones, 0, TRUE);
+                reportarEspacioDisponible(disponibilidad, dimensiones, 1, FALSE);
+                mostrarInformacionLocales(mall, disponibilidad, 0, dimensiones, TRUE);
+                mostrarInformacionLocales(mall, disponibilidad, 1, dimensiones, FALSE);
             }while(1); 
-        /*-Operacion 1: Mostrar el espacio disponible en todo el edificio y por piso
-        -Operacion 2: Mostrar la info de los locales por piso o alguno en especifico
-        -Editar info local
+        /*-Editar info local
         -Eliminar local
         -Opcion salida con EOF
             liberar en main la memoria dinamica
