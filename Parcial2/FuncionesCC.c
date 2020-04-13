@@ -170,8 +170,8 @@ short reportarEspacioDisponible(dis **disponibilidad,  short dimensiones_mall[],
     }
 }
 
-void mostrarInformacionLocales(local_t **centroComercial, dis **availability, short piso, short dimensiones_mall[], 
-    opc busqueda_piso_completa){
+void mostrarInformacionLocales(local_t **centroComercial, dis **availability, short piso, 
+    short dimensiones_mall[], opc busqueda_piso_completa){
 
     int i, j;
 
