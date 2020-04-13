@@ -52,7 +52,7 @@ void determinarDireccionLocal(short direccion_local[], short dimensiones_mall[])
 //Se crea el arreglo dinamico que representa el Mall
 local_t **construirCentroComercial(short dimensiones_mall[]){
 
-    int i, j;
+    int i;
     local_t **pMall = malloc(dimensiones_mall[0] * sizeof(local_t*));
 
     if(pMall != NULL){
@@ -91,8 +91,6 @@ local_t **construirCentroComercial(short dimensiones_mall[]){
 
 //Verificacion de espacio en ubicacion determinada por usuario}
 dis verificarUbicacionLocal(dis **Mall_availability, short piso, short espacio_piso){
-
-    dis disponibilidad_espacio;
 
     if(!Mall_availability[piso - 1][espacio_piso - 1]) return DESOCUPADO;
     else return OCUPADO;
