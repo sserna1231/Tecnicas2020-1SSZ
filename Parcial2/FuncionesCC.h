@@ -27,7 +27,8 @@ typedef enum edit_field{
 } campo; //El id no es modificable por el usuario
 
 //Mostrar un local especifico
-void mostrarLocal(local_t ** centroComercial, short piso, short espacio_piso);
+void mostrarLocal(local_t ** centroComercial, dis **availability, short piso,
+    short espacio_piso);
 
 //Funcion que devulve las dimensiones especificadas del mall
 void determinarDimensionesMall(short dimensiones_mall[]);
@@ -42,7 +43,7 @@ local_t **construirCentroComercial(short dimensiones_mall[]);
 dis **alocarEspacioMatrizDisponibilidad(short dimensiones_mall[]);
 
 //Verificacion de espacio en ubicacion determinada por usuario}
-short verificarUbicacionLocal(dis **Mall_availability, short piso, short espacio_piso);
+dis verificarUbicacionLocal(dis **Mall_availability, short piso, short espacio_piso);
 
 //Se llenan campos importantes de la informacion del mall
 void establecerNuevoLocal(local_t ** pMatriz , short direccion_local[]);
@@ -54,20 +55,22 @@ void establecerDisponibilidad(dis **Mall_availability, dis Disponibilidad,
 //Funcion revursiva que da cuenta del espacio disponible
 /*Recibe como parametro Verdadero o Falso si se desea el espacio para todo el edificio
  o solo para una fila concreta*/
-short reportarEspacioDisponible(local_t **centroComercial,  short dimensiones_mall[], 
+short reportarEspacioDisponible(dis **availability,  short dimensiones_mall[], 
     short piso, opc busqueda_completa);
 
 //Muestra la informacion de un conjunto de locales
 /*Si se le da como parametro verdadero, muestra todos los locales 
 del centro comercial. Si se deja como falso, solo muestra los locales del 
 piso especificado*/
-void mostrarInformacionLocales(local_t **centroComercial, short piso, opc busqueda_piso_completa);
+void mostrarInformacionLocales(local_t **centroComercial, dis **availability, short piso, short dimensiones_mall[], 
+    opc busqueda_piso_completa);
 
 
 /*Permite editar la informacion de un local a la vez
 Se localiza el local de interes de acuerdo a su direccion. Para esto el
 usuario debe hacer uso de mostrar informacion de local para todo el centro y obtener
 su ubicacion*/
-void editarInfoLocal(local_t **centroComercial, dis availability, short piso, short espacio_piso);
+void editarInfoLocal(local_t **centroComercial, dis **availability, short piso, short espacio_piso,
+    short dimensiones_mall[]);
 
 #endif /* FUNCIONESCC_H_ */
