@@ -22,6 +22,10 @@ typedef enum Disponibilidad{
     DESOCUPADO, OCUPADO
 } dis;
 
+typedef enum edit_field{
+    NOMBRE = 1, UBICACION = 2
+} campo; //El id no es modificable por el usuario
+
 //Mostrar un local especifico
 void mostrarLocal(local_t ** centroComercial);
 
@@ -62,5 +66,12 @@ short reportarEspacioDisponible(local_t **centroComercial,  short dimensiones_ma
 del centro comercial. Si se deja como falso, solo muestra los locales del 
 piso especificado*/
 void mostrarInformacionLocales(local_t **centroComercial, short piso, opc busqueda_piso_completa);
+
+
+/*Permite editar la informacion de un local a la vez
+Se localiza el local de interes de acuerdo a su direccion. Para esto el
+usuario debe hacer uso de mostrar informacion de local para todo el centro y obtener
+su ubicacion*/
+void editarInfoLocal(local_t **centroComercial, dis availability, short piso, short espacio_piso);
 
 #endif /* FUNCIONESCC_H_ */

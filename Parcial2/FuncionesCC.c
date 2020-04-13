@@ -219,3 +219,46 @@ void mostrarInformacionLocales(local_t **centroComercial, dis **availability, sh
             break;
     }
 }
+
+void editarInfoLocal(local_t **centroComercial, dis availability, short piso, short espacio_piso,
+    short dimensiones_mall[]){
+
+    campo c; //Valor que tomara el enum
+    short direccion_local_nuevo[2];
+    short direccion_local[2] = {piso, espacio_piso};
+    local_t local = centroComercial[piso][espacio_piso];
+
+    printf("Digite la opcion correspondiente del campo que quiere editar:\n");
+    printf("1. Nombre\n2. Ubicacion\n\n");
+    do{
+        printf("Opc: > "); scanf("%i", &c);
+            if(opc < 1 || opc > 2) printf("Valor invalido");
+    } while(opc < 1 || opc > 2);
+
+    switch(c){
+        case NOMBRE:
+            printf("Introduzca el nombre del establecimiento:\n> ");
+            fflush(stdin);
+            fgets(local.nombreLocal, 35, stdin);
+            //Quitar el caracter de salto de linea
+            for(int k = 0; k < 35; k++){
+                if(local.nombreLocal[k] == '\n')
+                    local.nombreLocal[k] = '\0';
+            }
+            centroComercial[piso][espacio_piso] = local;
+            break;
+        case UBICACION:
+            determinarDireccionLocal(direccion_local_nuevo, dimensiones_mall);
+            
+            if(verificarUbicacionLocal(availability, direccion_local_nuevo[0], direccion_local_nuevo[1])){
+                centroComercial[direccion_local_nuevo[0] - 1][direccion_local_nuevo[1] - 1] = local;
+                establecerDisponibilidad(availability, OCUPADO, direccion_local_nuevo);
+                /*Borrar la anterior ubicacion*/
+                establecerDisponibilidad(availability, DESOCUPADO, direccion_local);
+            } else{
+                printf("La nueva ubicacion no esta disponible");
+            }
+            break;
+        default: printf("Opcion invalida\n\n");
+    }
+}
