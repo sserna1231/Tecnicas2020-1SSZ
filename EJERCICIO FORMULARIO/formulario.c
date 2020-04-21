@@ -66,7 +66,7 @@ void llenarForm(user* usuario_nuevo){
         } while(usuario_nuevo->year < 1910 || usuario_nuevo->year > 2020);
 
 	//Reemplazo del new line caracter que inserta fgets
-	for(i = 0; i < 30; i++){
+	for(i = 0; i < 30; i++){ // 30 podri ser una constante
 		if(usuario_nuevo->name[i] == '\n')
 			usuario_nuevo->name[i] = 0;
 		if(usuario_nuevo->name[i] == '\n')
@@ -89,6 +89,7 @@ void guardarNuevoUsuario(user Matriz[][5], user* nuevo_registro_usuario){
 
     for(j = 0; j < 5; j++){
         if(Matriz[nuevo_registro_usuario->mes][j].name[0] == '\0'){
+            // Si quieres copiarlo a la matriz tienes que hacerlo item x item, sino no te va a funcionar bn. 
             Matriz[nuevo_registro_usuario->mes][j] = *nuevo_registro_usuario;
             printf("%s %d %d %d", Matriz[nuevo_registro_usuario->mes][j].name,
             Matriz[nuevo_registro_usuario->mes][j].dia, Matriz[nuevo_registro_usuario->mes][j].mes
@@ -102,7 +103,7 @@ int verificarEspacio(user Matriz[][5], short mes){
 
     int j;
 
-    for(j = 0; j < 5; j++){
+    for(j = 0; j < 5; j++){ // 5 podria ser una constante
         if(Matriz[mes - 1][j].name[0] == '\0')
             return 1;
     }
@@ -119,6 +120,8 @@ void mostrarDatosMes(user Matriz[][5], short mes){
     }
 }
 
+
+/*  Muy chevere tu funcion ¨*/
 double segundosActualidad(enum time_scala tiempo_buscado, int tiempo_interes){
 
     struct tm *secs;

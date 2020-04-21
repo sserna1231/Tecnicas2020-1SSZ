@@ -31,6 +31,7 @@ int main(){
                         printf("\nHasta luego\n");
                         break;
                     case LOG_IN:
+                        // Aqui deberías definir un nuevo usuario, sino como el paso es por referencia entonces todos te quedarían apuntando al mismo valor
                         verificarMesUsuario(&usuario);
                         if(verificarEspacio(server, usuario.mes)){
                             llenarForm(&usuario);

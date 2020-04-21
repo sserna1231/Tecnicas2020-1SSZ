@@ -46,6 +46,7 @@ dias_semana_e llenarDiasSemana(){
     dias_semana_e diaUsuario;
 
  	printf("DIA\tNUMERO\n");
+ 	// Luisa: no entiendo para que sirve el size of aqui
     while(i < sizeof(dias_semana_e) - 1){
         printf("%s\t%d", diaUsuario, diaUsuario);
         i++; diaUsuario++;
