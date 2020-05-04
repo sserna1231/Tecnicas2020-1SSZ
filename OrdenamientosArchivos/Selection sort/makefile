@@ -1,8 +1,7 @@
-programa: exe
-	exe
-exe: main.o selection.o
-	gcc -o exe main.o selection.o
-selection.o: selection.c
+programa: select
+select: main selection
+	gcc -o select main.o selection.o
+selection: selection.c selection.h
 	gcc -c selection.c
-main.o: main.c
+main: main.c selection.h
 	gcc -c main.c
