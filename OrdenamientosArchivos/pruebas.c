@@ -178,9 +178,10 @@ void quickSort(int* Arreglo, int longitud_arreglo, long long operaciones[]){
 
 void bubbleSort(int* Arreglo, int longitud_arreglo, long long operaciones[]){
     
-    int rep = 0;//Contador de comparaciones y reposiciones
-    float potencia = (pow(longitud_arreglo, 2) - longitud_arreglo)/2;
-    operaciones[0] = (int) potencia;
+     
+    long float potencia = (pow(longitud_arreglo, 2) - longitud_arreglo)/2;
+    operaciones[0] = (long long) potencia;
+    operaciones[2] = longitud_arreglo - 1;
 
         for(int i = 1; i < longitud_arreglo; i++){
             for(int j = 0; j < longitud_arreglo - i; j++){
@@ -237,12 +238,13 @@ int buscarMenor ( int* Lista, int i, int N, long long* comparaciones){
     int menor = VALOR_MAYOR;
     int pos_menor;
     for ( ; i<N; i++ ){
-        if ( Lista[i] <= menor ){/*Inicialmente cualquier valor será menor que VALOR_MAYOR; así que 
+        if (Lista[i] <= menor) {/*Inicialmente cualquier valor será menor que VALOR_MAYOR; así que 
         automáticamente el menor éstará en la posición i*/
             (*comparaciones)++;
             menor = Lista[i];
             pos_menor = i;
         }
+        (*comparaciones)++; //Hay una condición no contada por que no se entra al if
     }
     return pos_menor;
 }
