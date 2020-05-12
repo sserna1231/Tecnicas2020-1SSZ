@@ -3,8 +3,8 @@ all:programa
 programa: main FuncionesCC
 	g++ -o mallAdmin main.o FuncionesCC.o
 
-main: main.c FuncionesCC.h
-	g++ -c main.c
+main: main.cpp FuncionesCC.h
+	g++ -c main.cpp
 
-FuncionesCC: FuncionesCC.c FuncionesCC.h
-	g++ -c FuncionesCC.c
+FuncionesCC: FuncionesCC.cpp FuncionesCC.h
+	g++ -c FuncionesCC.cpp
