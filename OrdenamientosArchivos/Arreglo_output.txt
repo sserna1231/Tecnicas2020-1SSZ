@@ -558,3 +558,31 @@ Cantidad de comparaciones: 31242533
 Cantidad de reposiciones: 6954203
 ===============================================
 
+QuickSort
+===============================================
+Inicio>
+Fecha: 11/05/2020 Hora: 16:00:38
+Final>
+Fecha: 11/05/2020 Hora: 16:00:38
+Final>
+Fecha: 11/05/2020 Hora: 16:00:38
+Tiempo de ejecucion: 0.2649999857 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 24051713
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 11/05/2020 Hora: 16:00:39
+Final>
+Fecha: 11/05/2020 Hora: 16:00:40
+Final>
+Fecha: 11/05/2020 Hora: 16:00:40
+Tiempo de ejecucion: 0.4830000103 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 31242533
+Cantidad de reposiciones: 6954203
+===============================================
+
