@@ -112,7 +112,6 @@ void imprimirEstadisticas(stat *estadisticas_prueba, int Test_size, const char* 
         fprintf(output, "===============================================\n");
         fprintf(output, "Inicio>\n%s\n", estadisticas_prueba->fecha_init);
         fprintf(output, "Final>\n%s\n", estadisticas_prueba->fecha_fin);
-        fprintf(output, "Final>\n%s\n", estadisticas_prueba->fecha_fin);
         fprintf(output, "Tiempo de ejecucion: %.10f segundos\n", estadisticas_prueba->exec_time);
         fprintf(output, "Cantidad de iteraciones (si aplica): %d\n", estadisticas_prueba->operaciones[2]);
         fprintf(output, "Cantidad de comparaciones: %d\n", estadisticas_prueba->operaciones[0]);
@@ -120,7 +119,7 @@ void imprimirEstadisticas(stat *estadisticas_prueba, int Test_size, const char* 
         fprintf(output, "===============================================\n\n");
     } else{
         printf("Error abriendo el archivo\n\n");
-        printf("No se pudo imprimir las estadisticas\n\n");
+        printf("No se podrán imprimir las estadisticas\n\n");
     }
     fclose(output);
 }
