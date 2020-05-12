@@ -80,6 +80,7 @@ int main(){
                         establecerDisponibilidad(disponibilidad, DESOCUPADO, dir_local);
                         break;
                     case 0: printf("Vuelva pronto...\n\n");
+                        printf("Cerrando programa\n"); system("PAUSE");
                 }
             }while(opcion); 
 
