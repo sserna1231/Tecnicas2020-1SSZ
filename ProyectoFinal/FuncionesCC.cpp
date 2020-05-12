@@ -53,11 +53,11 @@ void determinarDireccionLocal(short direccion_local[], short dimensiones_mall[])
 local_t **construirCentroComercial(short dimensiones_mall[]){
 
     int i;
-    local_t **pMall = malloc(dimensiones_mall[0] * sizeof(local_t*));
+    local_t **pMall = (local_t**)malloc(dimensiones_mall[0] * sizeof(local_t*));
 
     if(pMall != NULL){
         for(i = 0; i < dimensiones_mall[0]; i++){
-          pMall[i] = malloc(dimensiones_mall[1] * sizeof(local_t));
+          pMall[i] = (local_t*) malloc(dimensiones_mall[1] * sizeof(local_t));
         }
     } else{
     printf("Error reservando la memoria\n");
@@ -68,13 +68,13 @@ local_t **construirCentroComercial(short dimensiones_mall[]){
 //Matriz de disponibilidad
  dis **alocarEspacioMatrizDisponibilidad(short dimensiones_mall[]){
 
-    dis disponibilidad = 0;
+    dis disponibilidad = (dis) DESOCUPADO;
     int i, j;
-    dis **pDisponibilidad = malloc(dimensiones_mall[0] * sizeof(dis*));
+    dis **pDisponibilidad = (dis**) malloc(dimensiones_mall[0] * sizeof(dis*));
 
     if(pDisponibilidad != NULL){
         for(i = 0; i < dimensiones_mall[0]; i++){
-          pDisponibilidad[i] = malloc(dimensiones_mall[1] * sizeof(dis));
+          pDisponibilidad[i] = (dis*) malloc(dimensiones_mall[1] * sizeof(dis));
         }
     } else{
     printf("Error reservando la memoria\n");
@@ -128,10 +128,10 @@ void establecerDisponibilidad(dis **Mall_availability, dis Disponibilidad,
 
     switch(Disponibilidad){
         case DESOCUPADO:
-            Mall_availability[direccion_local[0] - 1][direccion_local[1] - 1] = 0;
+            Mall_availability[direccion_local[0] - 1][direccion_local[1] - 1] = DESOCUPADO;
             break;
         case OCUPADO:
-            Mall_availability[direccion_local[0] - 1][direccion_local[1] - 1] = 1;
+            Mall_availability[direccion_local[0] - 1][direccion_local[1] - 1] = OCUPADO;
             break;
         default: printf("Opcion de disponibilidad desconocida");
     }
