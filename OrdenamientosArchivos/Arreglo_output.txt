@@ -1,0 +1,588 @@
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:21
+Final>
+Fecha: 07/05/2020 Hora: 18:29:21
+Final>
+Fecha: 07/05/2020 Hora: 18:29:21
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 9
+Cantidad de comparaciones: 45
+Cantidad de reposiciones: 0
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:21
+Final>
+Fecha: 07/05/2020 Hora: 18:29:21
+Final>
+Fecha: 07/05/2020 Hora: 18:29:21
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 9
+Cantidad de comparaciones: 45
+Cantidad de reposiciones: 18
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:22
+Final>
+Fecha: 07/05/2020 Hora: 18:29:22
+Final>
+Fecha: 07/05/2020 Hora: 18:29:22
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 99
+Cantidad de comparaciones: 4950
+Cantidad de reposiciones: 0
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:22
+Final>
+Fecha: 07/05/2020 Hora: 18:29:22
+Final>
+Fecha: 07/05/2020 Hora: 18:29:22
+Tiempo de ejecucion: 0.0030000000 segundos
+Cantidad de iteraciones (si aplica): 99
+Cantidad de comparaciones: 4950
+Cantidad de reposiciones: 2668
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:23
+Final>
+Fecha: 07/05/2020 Hora: 18:29:23
+Final>
+Fecha: 07/05/2020 Hora: 18:29:23
+Tiempo de ejecucion: 0.0149999997 segundos
+Cantidad de iteraciones (si aplica): 999
+Cantidad de comparaciones: 499500
+Cantidad de reposiciones: 0
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:23
+Final>
+Fecha: 07/05/2020 Hora: 18:29:23
+Final>
+Fecha: 07/05/2020 Hora: 18:29:23
+Tiempo de ejecucion: 0.0219999999 segundos
+Cantidad de iteraciones (si aplica): 999
+Cantidad de comparaciones: 499500
+Cantidad de reposiciones: 255843
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:25
+Final>
+Fecha: 07/05/2020 Hora: 18:29:26
+Final>
+Fecha: 07/05/2020 Hora: 18:29:26
+Tiempo de ejecucion: 1.2120000124 segundos
+Cantidad de iteraciones (si aplica): 9999
+Cantidad de comparaciones: 49995000
+Cantidad de reposiciones: 0
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:26
+Final>
+Fecha: 07/05/2020 Hora: 18:29:28
+Final>
+Fecha: 07/05/2020 Hora: 18:29:28
+Tiempo de ejecucion: 1.5920000076 segundos
+Cantidad de iteraciones (si aplica): 9999
+Cantidad de comparaciones: 49995000
+Cantidad de reposiciones: 24939986
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 18:29:32
+Final>
+Fecha: 07/05/2020 Hora: 21:50:27
+Final>
+Fecha: 07/05/2020 Hora: 21:50:27
+Tiempo de ejecucion: 12054.7373046875 segundos
+Cantidad de iteraciones (si aplica): 1245183
+Cantidad de comparaciones: 775240974300
+Cantidad de reposiciones: 0
+===============================================
+
+BubbleSort
+===============================================
+Inicio>
+Fecha: 07/05/2020 Hora: 21:50:28
+Final>
+Fecha: 08/05/2020 Hora: 03:02:22
+Final>
+Fecha: 08/05/2020 Hora: 03:02:22
+Tiempo de ejecucion: 18714.6523437500 segundos
+Cantidad de iteraciones (si aplica): 1245183
+Cantidad de comparaciones: 775240974300
+Cantidad de reposiciones: 959701112
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:24
+Final>
+Fecha: 08/05/2020 Hora: 10:29:24
+Final>
+Fecha: 08/05/2020 Hora: 10:29:24
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 1
+Cantidad de comparaciones: 9
+Cantidad de reposiciones: 0
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:24
+Final>
+Fecha: 08/05/2020 Hora: 10:29:24
+Final>
+Fecha: 08/05/2020 Hora: 10:29:24
+Tiempo de ejecucion: 0.0030000000 segundos
+Cantidad de iteraciones (si aplica): 9
+Cantidad de comparaciones: 45
+Cantidad de reposiciones: 18
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:26
+Final>
+Fecha: 08/05/2020 Hora: 10:29:26
+Final>
+Fecha: 08/05/2020 Hora: 10:29:26
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 1
+Cantidad de comparaciones: 99
+Cantidad de reposiciones: 0
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:26
+Final>
+Fecha: 08/05/2020 Hora: 10:29:26
+Final>
+Fecha: 08/05/2020 Hora: 10:29:26
+Tiempo de ejecucion: 0.0020000001 segundos
+Cantidad de iteraciones (si aplica): 85
+Cantidad de comparaciones: 4845
+Cantidad de reposiciones: 2668
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:28
+Final>
+Fecha: 08/05/2020 Hora: 10:29:28
+Final>
+Fecha: 08/05/2020 Hora: 10:29:28
+Tiempo de ejecucion: 0.0020000001 segundos
+Cantidad de iteraciones (si aplica): 1
+Cantidad de comparaciones: 999
+Cantidad de reposiciones: 0
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:28
+Final>
+Fecha: 08/05/2020 Hora: 10:29:28
+Final>
+Fecha: 08/05/2020 Hora: 10:29:28
+Tiempo de ejecucion: 0.0170000009 segundos
+Cantidad de iteraciones (si aplica): 964
+Cantidad de comparaciones: 498870
+Cantidad de reposiciones: 255843
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:31
+Final>
+Fecha: 08/05/2020 Hora: 10:29:31
+Final>
+Fecha: 08/05/2020 Hora: 10:29:31
+Tiempo de ejecucion: 0.0020000001 segundos
+Cantidad de iteraciones (si aplica): 1
+Cantidad de comparaciones: 9999
+Cantidad de reposiciones: 0
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:31
+Final>
+Fecha: 08/05/2020 Hora: 10:29:32
+Final>
+Fecha: 08/05/2020 Hora: 10:29:32
+Tiempo de ejecucion: 1.4010000229 segundos
+Cantidad de iteraciones (si aplica): 9847
+Cantidad de comparaciones: 49983372
+Cantidad de reposiciones: 24939986
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:39
+Final>
+Fecha: 08/05/2020 Hora: 10:29:39
+Final>
+Fecha: 08/05/2020 Hora: 10:29:39
+Tiempo de ejecucion: 0.0170000009 segundos
+Cantidad de iteraciones (si aplica): 1
+Cantidad de comparaciones: 1245183
+Cantidad de reposiciones: 0
+===============================================
+
+Fixed BubbleSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 10:29:40
+Final>
+Fecha: 08/05/2020 Hora: 16:18:40
+Final>
+Fecha: 08/05/2020 Hora: 16:18:40
+Tiempo de ejecucion: 20940.0957031250 segundos
+Cantidad de iteraciones (si aplica): 1244568
+Cantidad de comparaciones: 2146671636
+Cantidad de reposiciones: 959701112
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:41
+Final>
+Fecha: 08/05/2020 Hora: 17:07:41
+Final>
+Fecha: 08/05/2020 Hora: 17:07:41
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 9
+Cantidad de comparaciones: 45
+Cantidad de reposiciones: 0
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:41
+Final>
+Fecha: 08/05/2020 Hora: 17:07:41
+Final>
+Fecha: 08/05/2020 Hora: 17:07:41
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 9
+Cantidad de comparaciones: 45
+Cantidad de reposiciones: 8
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:44
+Final>
+Fecha: 08/05/2020 Hora: 17:07:44
+Final>
+Fecha: 08/05/2020 Hora: 17:07:44
+Tiempo de ejecucion: 0.0020000001 segundos
+Cantidad de iteraciones (si aplica): 99
+Cantidad de comparaciones: 4950
+Cantidad de reposiciones: 0
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:44
+Final>
+Fecha: 08/05/2020 Hora: 17:07:44
+Final>
+Fecha: 08/05/2020 Hora: 17:07:44
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 99
+Cantidad de comparaciones: 4950
+Cantidad de reposiciones: 96
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:45
+Final>
+Fecha: 08/05/2020 Hora: 17:07:45
+Final>
+Fecha: 08/05/2020 Hora: 17:07:45
+Tiempo de ejecucion: 0.0099999998 segundos
+Cantidad de iteraciones (si aplica): 999
+Cantidad de comparaciones: 499500
+Cantidad de reposiciones: 0
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:45
+Final>
+Fecha: 08/05/2020 Hora: 17:07:45
+Final>
+Fecha: 08/05/2020 Hora: 17:07:45
+Tiempo de ejecucion: 0.0099999998 segundos
+Cantidad de iteraciones (si aplica): 999
+Cantidad de comparaciones: 499500
+Cantidad de reposiciones: 987
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:46
+Final>
+Fecha: 08/05/2020 Hora: 17:07:47
+Final>
+Fecha: 08/05/2020 Hora: 17:07:47
+Tiempo de ejecucion: 0.7649999857 segundos
+Cantidad de iteraciones (si aplica): 9999
+Cantidad de comparaciones: 49995000
+Cantidad de reposiciones: 0
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:07:47
+Final>
+Fecha: 08/05/2020 Hora: 17:07:48
+Final>
+Fecha: 08/05/2020 Hora: 17:07:48
+Tiempo de ejecucion: 0.6449999809 segundos
+Cantidad de iteraciones (si aplica): 9999
+Cantidad de comparaciones: 49995000
+Cantidad de reposiciones: 9991
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 17:08:04
+Final>
+Fecha: 08/05/2020 Hora: 19:04:17
+Final>
+Fecha: 08/05/2020 Hora: 19:04:17
+Tiempo de ejecucion: 6973.0087890625 segundos
+Cantidad de iteraciones (si aplica): 1245183
+Cantidad de comparaciones: 775240974300
+Cantidad de reposiciones: 0
+===============================================
+
+SelectionSort
+===============================================
+Inicio>
+Fecha: 08/05/2020 Hora: 19:04:18
+Final>
+Fecha: 08/05/2020 Hora: 21:18:12
+Final>
+Fecha: 08/05/2020 Hora: 21:18:12
+Tiempo de ejecucion: 8033.9741210938 segundos
+Cantidad de iteraciones (si aplica): 1245183
+Cantidad de comparaciones: 775240974300
+Cantidad de reposiciones: 1245174
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:23
+Final>
+Fecha: 09/05/2020 Hora: 11:44:23
+Final>
+Fecha: 09/05/2020 Hora: 11:44:23
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 25
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:23
+Final>
+Fecha: 09/05/2020 Hora: 11:44:23
+Final>
+Fecha: 09/05/2020 Hora: 11:44:23
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 31
+Cantidad de reposiciones: 8
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:24
+Final>
+Fecha: 09/05/2020 Hora: 11:44:24
+Final>
+Fecha: 09/05/2020 Hora: 11:44:24
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 573
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:24
+Final>
+Fecha: 09/05/2020 Hora: 11:44:24
+Final>
+Fecha: 09/05/2020 Hora: 11:44:24
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 692
+Cantidad de reposiciones: 166
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:25
+Final>
+Fecha: 09/05/2020 Hora: 11:44:25
+Final>
+Fecha: 09/05/2020 Hora: 11:44:25
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 8977
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:25
+Final>
+Fecha: 09/05/2020 Hora: 11:44:25
+Final>
+Fecha: 09/05/2020 Hora: 11:44:25
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 12365
+Cantidad de reposiciones: 2349
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:27
+Final>
+Fecha: 09/05/2020 Hora: 11:44:27
+Final>
+Fecha: 09/05/2020 Hora: 11:44:27
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 123617
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:27
+Final>
+Fecha: 09/05/2020 Hora: 11:44:27
+Final>
+Fecha: 09/05/2020 Hora: 11:44:27
+Tiempo de ejecucion: 0.0000000000 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 172827
+Cantidad de reposiciones: 32441
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:30
+Final>
+Fecha: 09/05/2020 Hora: 11:44:30
+Final>
+Fecha: 09/05/2020 Hora: 11:44:30
+Tiempo de ejecucion: 0.3740000129 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 24051713
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 09/05/2020 Hora: 11:44:32
+Final>
+Fecha: 09/05/2020 Hora: 11:44:33
+Final>
+Fecha: 09/05/2020 Hora: 11:44:33
+Tiempo de ejecucion: 0.7490000129 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 31242533
+Cantidad de reposiciones: 6954203
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 11/05/2020 Hora: 16:00:38
+Final>
+Fecha: 11/05/2020 Hora: 16:00:38
+Final>
+Fecha: 11/05/2020 Hora: 16:00:38
+Tiempo de ejecucion: 0.2649999857 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 24051713
+Cantidad de reposiciones: 0
+===============================================
+
+QuickSort
+===============================================
+Inicio>
+Fecha: 11/05/2020 Hora: 16:00:39
+Final>
+Fecha: 11/05/2020 Hora: 16:00:40
+Final>
+Fecha: 11/05/2020 Hora: 16:00:40
+Tiempo de ejecucion: 0.4830000103 segundos
+Cantidad de iteraciones (si aplica): 0
+Cantidad de comparaciones: 31242533
+Cantidad de reposiciones: 6954203
+===============================================
+
