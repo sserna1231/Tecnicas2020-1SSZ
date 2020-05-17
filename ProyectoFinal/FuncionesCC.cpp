@@ -174,18 +174,25 @@ void mostrarInformacionLocales(local_t **centroComercial, dis **availability, sh
     short dimensiones_mall[], opc busqueda_piso_completa){
 
     int i, j;
-
+    short reported = 0; //Cantidad de locales mostrados
+    
     switch(busqueda_piso_completa){
         case FALSE:
             for(i = 0; i < dimensiones_mall[1]; i++)
-                if(verificarUbicacionLocal(availability, piso, i + 1))
-                    mostrarLocal(centroComercial, availability, piso, i + 1);
+                if(verificarUbicacionLocal(availability, piso, i + 1)){
+                    mostrarLocal(centroComercial, availability, piso, i + 1); 
+                    reported++;
+                }
+            if (!reported) printf("No hay informacion que mostrar\n\n");
             break;
         case TRUE:
             for(i = 0; i < dimensiones_mall[0]; i++)
                 for(j = 0; j < dimensiones_mall[1]; j++)
-                    if(verificarUbicacionLocal(availability, i + 1, j + 1))
+                    if(verificarUbicacionLocal(availability, i + 1, j + 1)){
                         mostrarLocal(centroComercial, availability, i + 1, j + 1);
+                        reported++;
+                    }
+            if (!reported) printf("No hay informacion que mostrar\n\n");
             break;
     }
 }
