@@ -10,10 +10,9 @@ typedef struct Local{
     int idLocal; // Calculado automaticamente por su programa
     int pisoLocal;
     int numLocalxPiso;//Columnas
-    // Completelo con lo que quiera
 } local_t;
 
-typedef enum opcion_recursiva{
+typedef enum opcion_booleana{
     FALSE, TRUE
 } opc;
 
